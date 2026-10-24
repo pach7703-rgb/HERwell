@@ -1,0 +1,6 @@
+{
+  "name": "HERwell — Women's Health Companion",
+  "description": "Understand your health and own your wellbeing with our comprehensive women's health companion, AI health guide, symptom tracker, and clinical appointment summary tool.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

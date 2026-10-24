@@ -1,0 +1,85 @@
+import { SymptomLog, DoctorQuestion } from '../types';
+
+export const SAMPLE_PATIENT_NAME = 'Priya Sharma (Sample Profile — Hackathon Demo)';
+
+export const SAMPLE_SYMPTOM_LOGS: SymptomLog[] = [
+  {
+    id: 'sample-log-1',
+    symptomName: 'Severe Lower Abdominal Cramping & Pelvic Pressure',
+    category: 'Menstrual & Pelvic Pain',
+    date: '2026-10-21',
+    time: '08:30',
+    duration: '6 hours',
+    severity: 8,
+    frequency: 'Cyclical (same time in cycle)',
+    associatedSymptoms: ['Lower back pain', 'Nausea', 'Fatigue', 'Headache'],
+    menstrualPhase: 'Menstrual (Bleeding)',
+    doctorNotes: 'Day 1 of period. Standard painkiller provided minimal relief. Had to miss afternoon college lectures due to intensity of cramps.',
+    createdAt: new Date('2026-10-21T08:30:00').toISOString(),
+  },
+  {
+    id: 'sample-log-2',
+    symptomName: 'Persistent Exhaustion & Shortness of Breath on Stairs',
+    category: 'Fatigue & Energy',
+    date: '2026-10-18',
+    time: '14:15',
+    duration: 'All day',
+    severity: 6,
+    frequency: 'Constant / Daily',
+    associatedSymptoms: ['Dizziness', 'Cold hands and feet', 'Brain fog'],
+    menstrualPhase: 'Follicular (Pre-ovulation)',
+    doctorNotes: 'Felt unusually breathless after climbing just two flights of stairs. Sleep was 8 hours but woke up feeling unrefreshed.',
+    createdAt: new Date('2026-10-18T14:15:00').toISOString(),
+  },
+  {
+    id: 'sample-log-3',
+    symptomName: 'Severe Mood Irritability, Anxiety & Bloating',
+    category: 'Premenstrual & Mood',
+    date: '2026-10-12',
+    time: '19:00',
+    duration: '3 days',
+    severity: 7,
+    frequency: 'Cyclical (same time in cycle)',
+    associatedSymptoms: ['Breast tenderness', 'Insomnia', 'Sugar cravings', 'Bloating'],
+    menstrualPhase: 'Luteal (Post-ovulation / Pre-period)',
+    doctorNotes: 'Occurred 5 days prior to menstrual cycle. Mood felt disproportionately heavy and irritable, cleared up within 24 hours after bleeding began.',
+    createdAt: new Date('2026-10-12T19:00:00').toISOString(),
+  },
+];
+
+export const SAMPLE_DOCTOR_QUESTIONS: DoctorQuestion[] = [
+  {
+    id: 'q-sample-1',
+    text: 'Could my severe period pain and lower back aching be an indicator of endometriosis or adenomyosis rather than standard dysmenorrhea?',
+    category: 'Pelvic Pain & Cycles',
+    checked: true,
+    sourceTopicTitle: 'Endometriosis',
+    notes: 'Mention that over-the-counter paracetamol and mefenamic acid did not reduce the pain on day 1.',
+    createdAt: '2026-10-21T09:00:00.000Z',
+  },
+  {
+    id: 'q-sample-2',
+    text: 'Do you recommend checking a complete blood count (CBC) and serum ferritin to assess for iron deficiency anaemia given my fatigue and heavy flow?',
+    category: 'Fatigue & Nutrition',
+    checked: false,
+    sourceTopicTitle: 'Anaemia & Iron Deficiency',
+    notes: 'Ask if oral iron supplementation or dietary iron enhancement is recommended.',
+    createdAt: '2026-10-18T15:00:00.000Z',
+  },
+  {
+    id: 'q-sample-3',
+    text: 'Would a pelvic ultrasound be appropriate to evaluate my ovaries and uterine lining for PCOS or fibroids?',
+    category: 'Diagnostic Testing',
+    checked: false,
+    sourceTopicTitle: 'Polycystic Ovary Syndrome (PCOS)',
+    createdAt: '2026-10-15T11:00:00.000Z',
+  },
+  {
+    id: 'q-sample-4',
+    text: 'Could my premenstrual mood drops and physical bloating indicate Premenstrual Dysphoric Disorder (PMDD)?',
+    category: 'Mental Wellbeing',
+    checked: true,
+    sourceTopicTitle: 'Premenstrual Syndrome (PMS) & PMDD',
+    createdAt: '2026-10-12T20:00:00.000Z',
+  },
+];
